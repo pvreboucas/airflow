@@ -1,0 +1,39 @@
+[2024-09-24T20:45:10.652+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-09-24T20:45:10.683+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: meu_primeiro_dag.cria_pasta scheduled__2024-09-22T00:00:00+00:00 [queued]>
+[2024-09-24T20:45:10.693+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: meu_primeiro_dag.cria_pasta scheduled__2024-09-22T00:00:00+00:00 [queued]>
+[2024-09-24T20:45:10.694+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-09-24T20:45:10.713+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): cria_pasta> on 2024-09-22 00:00:00+00:00
+[2024-09-24T20:45:10.721+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=114) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-09-24T20:45:10.723+0000] {standard_task_runner.py:64} INFO - Started process 120 to run task
+[2024-09-24T20:45:10.724+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'meu_primeiro_dag', 'cria_pasta', 'scheduled__2024-09-22T00:00:00+00:00', '--job-id', '165', '--raw', '--subdir', 'DAGS_FOLDER/meu_primeiro_dag.py', '--cfg-path', '/tmp/tmp7ozngj3c']
+[2024-09-24T20:45:10.726+0000] {standard_task_runner.py:91} INFO - Job 165: Subtask cria_pasta
+[2024-09-24T20:45:10.834+0000] {task_command.py:426} INFO - Running <TaskInstance: meu_primeiro_dag.cria_pasta scheduled__2024-09-22T00:00:00+00:00 [running]> on host 728271395ced
+[2024-09-24T20:45:11.101+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='meu_primeiro_dag' AIRFLOW_CTX_TASK_ID='cria_pasta' AIRFLOW_CTX_EXECUTION_DATE='2024-09-22T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-22T00:00:00+00:00'
+[2024-09-24T20:45:11.106+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-09-24T20:45:11.108+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-09-24T20:45:11.110+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', ' mkdir -p "/home/paulovictor/workspace/***-workspace/Airflow/pasta=2024-09-23 00:00:00+00:00/" ']
+[2024-09-24T20:45:11.143+0000] {subprocess.py:86} INFO - Output:
+[2024-09-24T20:45:11.154+0000] {subprocess.py:93} INFO - mkdir: cannot create directory ‘/home/paulovictor’: Permission denied
+[2024-09-24T20:45:11.156+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-09-24T20:45:11.157+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-09-24T20:45:11.190+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-09-24T20:45:11.204+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=meu_primeiro_dag, task_id=cria_pasta, run_id=scheduled__2024-09-22T00:00:00+00:00, execution_date=20240922T000000, start_date=20240924T204510, end_date=20240924T204511
+[2024-09-24T20:45:11.247+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 165 for task cria_pasta (Bash command failed. The command returned a non-zero exit code 1.; 120)
+[2024-09-24T20:45:11.299+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-09-24T20:45:11.350+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-24T20:45:11.353+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

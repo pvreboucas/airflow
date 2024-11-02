@@ -1,0 +1,23 @@
+[2024-10-22T15:06:39.810+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-10-22T15:06:39.976+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: aula_1_3_dados_climaticos.cria_pasta scheduled__2024-09-30T00:00:00+00:00 [queued]>
+[2024-10-22T15:06:40.025+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: aula_1_3_dados_climaticos.cria_pasta scheduled__2024-09-30T00:00:00+00:00 [queued]>
+[2024-10-22T15:06:40.027+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-10-22T15:06:48.090+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): cria_pasta> on 2024-09-30 00:00:00+00:00
+[2024-10-22T15:06:48.922+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=457) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-10-22T15:06:49.078+0000] {standard_task_runner.py:64} INFO - Started process 470 to run task
+[2024-10-22T15:06:49.081+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'aula_1_3_dados_climaticos', 'cria_pasta', 'scheduled__2024-09-30T00:00:00+00:00', '--job-id', '256', '--raw', '--subdir', 'DAGS_FOLDER/aula_1_3_dados_climaticos.py', '--cfg-path', '/tmp/tmpspg5nijk']
+[2024-10-22T15:06:49.380+0000] {standard_task_runner.py:91} INFO - Job 256: Subtask cria_pasta
+[2024-10-22T15:06:51.515+0000] {task_command.py:426} INFO - Running <TaskInstance: aula_1_3_dados_climaticos.cria_pasta scheduled__2024-09-30T00:00:00+00:00 [running]> on host 4e8aee365f90
+[2024-10-22T15:06:52.547+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='aula_1_3_dados_climaticos' AIRFLOW_CTX_TASK_ID='cria_pasta' AIRFLOW_CTX_EXECUTION_DATE='2024-09-30T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-09-30T00:00:00+00:00'
+[2024-10-22T15:06:52.548+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-10-22T15:06:52.581+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-10-22T15:06:52.582+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'mkdir -p "/home/paulovictor/workspace/***-workspace/Airflow/semana=2024-10-07/" ']
+[2024-10-22T15:06:52.607+0000] {subprocess.py:86} INFO - Output:
+[2024-10-22T15:06:52.615+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-10-22T15:06:52.617+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-10-22T15:06:53.170+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=aula_1_3_dados_climaticos, task_id=cria_pasta, run_id=scheduled__2024-09-30T00:00:00+00:00, execution_date=20240930T000000, start_date=20241022T150639, end_date=20241022T150653
+[2024-10-22T15:06:53.526+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-10-22T15:06:53.636+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-22T15:06:53.642+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,22 @@
+[2024-10-23T00:31:21.737+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-23T00:31:21.786+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: aula_4_1_get_stocks_dag.GOOG scheduled__2022-01-26T00:00:00+00:00 [queued]>
+[2024-10-23T00:31:21.809+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: aula_4_1_get_stocks_dag.GOOG scheduled__2022-01-26T00:00:00+00:00 [queued]>
+[2024-10-23T00:31:21.809+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-10-23T00:31:21.840+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): GOOG> on 2022-01-26 00:00:00+00:00
+[2024-10-23T00:31:21.852+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=285) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-10-23T00:31:21.854+0000] {standard_task_runner.py:72} INFO - Started process 338 to run task
+[2024-10-23T00:31:21.855+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'aula_4_1_get_stocks_dag', 'GOOG', 'scheduled__2022-01-26T00:00:00+00:00', '--job-id', '332', '--raw', '--subdir', 'DAGS_FOLDER/aula_4_1_get_stocks.py', '--cfg-path', '/tmp/tmpa9tkg0zg']
+[2024-10-23T00:31:21.859+0000] {standard_task_runner.py:105} INFO - Job 332: Subtask GOOG
+[2024-10-23T00:31:22.267+0000] {task_command.py:467} INFO - Running <TaskInstance: aula_4_1_get_stocks_dag.GOOG scheduled__2022-01-26T00:00:00+00:00 [running]> on host 375c06cd6615
+[2024-10-23T00:31:22.746+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='aula_4_1_get_stocks_dag' AIRFLOW_CTX_TASK_ID='GOOG' AIRFLOW_CTX_EXECUTION_DATE='2022-01-26T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-01-26T00:00:00+00:00'
+[2024-10-23T00:31:22.754+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-23T00:31:22.764+0000] {cache.py:130} INFO - Failed to create TzCache, reason: Error creating TzCache folder: '/home/***/.cache/py-yfinance' reason: [Errno 13] Permission denied: '/home/***/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+[2024-10-23T00:31:22.767+0000] {cache.py:336} INFO - Failed to create CookieCache, reason: Error creating CookieCache folder: '/home/***/.cache/py-yfinance' reason: [Errno 13] Permission denied: '/home/***/.cache/py-yfinance'. CookieCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+[2024-10-23T00:31:25.926+0000] {history.py:245} ERROR - $GOOG: possibly delisted; no price data found  (1h 2022-01-25 -> 2022-01-26) (Yahoo error = "1h data not available for startTime=1643086800 and endTime=1643173200. The requested range must be within the last 730 days.")
+[2024-10-23T00:31:25.952+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-10-23T00:31:25.994+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-23T00:31:25.994+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=aula_4_1_get_stocks_dag, task_id=GOOG, run_id=scheduled__2022-01-26T00:00:00+00:00, execution_date=20220126T000000, start_date=20241023T003121, end_date=20241023T003125
+[2024-10-23T00:31:26.048+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-23T00:31:26.071+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

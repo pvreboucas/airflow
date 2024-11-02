@@ -1,0 +1,20 @@
+[2024-10-22T15:07:00.291+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-10-22T15:07:00.502+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: aula_1_3_dados_climaticos.extrai_dados_climaticos scheduled__2024-10-07T00:00:00+00:00 [queued]>
+[2024-10-22T15:07:00.540+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: aula_1_3_dados_climaticos.extrai_dados_climaticos scheduled__2024-10-07T00:00:00+00:00 [queued]>
+[2024-10-22T15:07:00.541+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-10-22T15:07:09.797+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): extrai_dados_climaticos> on 2024-10-07 00:00:00+00:00
+[2024-10-22T15:07:10.107+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=484) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-10-22T15:07:10.112+0000] {standard_task_runner.py:64} INFO - Started process 514 to run task
+[2024-10-22T15:07:10.158+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'aula_1_3_dados_climaticos', 'extrai_dados_climaticos', 'scheduled__2024-10-07T00:00:00+00:00', '--job-id', '264', '--raw', '--subdir', 'DAGS_FOLDER/aula_1_3_dados_climaticos.py', '--cfg-path', '/tmp/tmpxotudlc7']
+[2024-10-22T15:07:10.170+0000] {standard_task_runner.py:91} INFO - Job 264: Subtask extrai_dados_climaticos
+[2024-10-22T15:07:10.909+0000] {task_command.py:426} INFO - Running <TaskInstance: aula_1_3_dados_climaticos.extrai_dados_climaticos scheduled__2024-10-07T00:00:00+00:00 [running]> on host 4e8aee365f90
+[2024-10-22T15:07:11.955+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='aula_1_3_dados_climaticos' AIRFLOW_CTX_TASK_ID='extrai_dados_climaticos' AIRFLOW_CTX_EXECUTION_DATE='2024-10-07T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-07T00:00:00+00:00'
+[2024-10-22T15:07:11.957+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-10-22T15:07:13.211+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-10-22T15:07:13.212+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-10-22T15:07:13.240+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=aula_1_3_dados_climaticos, task_id=extrai_dados_climaticos, run_id=scheduled__2024-10-07T00:00:00+00:00, execution_date=20241007T000000, start_date=20241022T150700, end_date=20241022T150713
+[2024-10-22T15:07:13.347+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-10-22T15:07:13.391+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-22T15:07:13.401+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

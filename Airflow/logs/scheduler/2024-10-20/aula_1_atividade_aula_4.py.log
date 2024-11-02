@@ -1,0 +1,95 @@
+[2024-10-20T20:00:16.075+0000] {processor.py:161} INFO - Started process (PID=2460) to work on /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:00:16.077+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aula_1_atividade_aula_4.py for tasks to queue
+[2024-10-20T20:00:16.081+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:00:16.079+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:00:16.116+0000] {processor.py:840} INFO - DAG(s) 'aula_1_atividade_4' retrieved from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:00:16.512+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:00:16.511+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:aula_1_atividade_4
+[2024-10-20T20:00:16.534+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:00:16.533+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:aula_1_atividade_4
+[2024-10-20T20:00:16.550+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:00:16.549+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:aula_1_atividade_4
+[2024-10-20T20:00:16.551+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:00:16.551+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-20T20:00:16.584+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:00:16.583+0000] {dag.py:3111} INFO - Creating ORM DAG for aula_1_atividade_4
+[2024-10-20T20:00:16.614+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:00:16.613+0000] {dag.py:3947} INFO - Setting next_dagrun for aula_1_atividade_4 to 2024-10-19 00:00:00+00:00, run_after=2024-10-20 00:00:00+00:00
+[2024-10-20T20:00:16.658+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aula_1_atividade_aula_4.py took 0.611 seconds
+[2024-10-20T20:00:46.915+0000] {processor.py:161} INFO - Started process (PID=2522) to work on /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:00:46.917+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aula_1_atividade_aula_4.py for tasks to queue
+[2024-10-20T20:00:46.920+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:00:46.919+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:00:46.948+0000] {processor.py:840} INFO - DAG(s) 'aula_1_atividade_4' retrieved from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:00:47.013+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:00:47.012+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-20T20:00:47.109+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:00:47.108+0000] {dag.py:3947} INFO - Setting next_dagrun for aula_1_atividade_4 to 2024-10-19 00:00:00+00:00, run_after=2024-10-20 00:00:00+00:00
+[2024-10-20T20:00:47.141+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aula_1_atividade_aula_4.py took 0.244 seconds
+[2024-10-20T20:01:17.696+0000] {processor.py:161} INFO - Started process (PID=2584) to work on /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:01:17.699+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aula_1_atividade_aula_4.py for tasks to queue
+[2024-10-20T20:01:17.702+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:01:17.701+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:01:17.732+0000] {processor.py:840} INFO - DAG(s) 'aula_1_atividade_4' retrieved from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:01:17.812+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:01:17.811+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-20T20:01:17.880+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:01:17.880+0000] {dag.py:3947} INFO - Setting next_dagrun for aula_1_atividade_4 to 2024-10-19 00:00:00+00:00, run_after=2024-10-20 00:00:00+00:00
+[2024-10-20T20:01:17.915+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aula_1_atividade_aula_4.py took 0.242 seconds
+[2024-10-20T20:01:48.254+0000] {processor.py:161} INFO - Started process (PID=2646) to work on /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:01:48.257+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aula_1_atividade_aula_4.py for tasks to queue
+[2024-10-20T20:01:48.260+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:01:48.259+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:01:48.290+0000] {processor.py:840} INFO - DAG(s) 'aula_1_atividade_4' retrieved from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:01:48.363+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:01:48.362+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-20T20:01:48.471+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:01:48.470+0000] {dag.py:3947} INFO - Setting next_dagrun for aula_1_atividade_4 to 2024-10-19 00:00:00+00:00, run_after=2024-10-20 00:00:00+00:00
+[2024-10-20T20:01:48.550+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aula_1_atividade_aula_4.py took 0.322 seconds
+[2024-10-20T20:02:18.758+0000] {processor.py:161} INFO - Started process (PID=2708) to work on /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:02:18.761+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aula_1_atividade_aula_4.py for tasks to queue
+[2024-10-20T20:02:18.764+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:02:18.763+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:02:18.784+0000] {processor.py:840} INFO - DAG(s) 'aula_1_atividade_4' retrieved from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:02:18.833+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:02:18.833+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-20T20:02:18.900+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:02:18.900+0000] {dag.py:3947} INFO - Setting next_dagrun for aula_1_atividade_4 to 2024-10-19 00:00:00+00:00, run_after=2024-10-20 00:00:00+00:00
+[2024-10-20T20:02:18.963+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aula_1_atividade_aula_4.py took 0.217 seconds
+[2024-10-20T20:02:49.232+0000] {processor.py:161} INFO - Started process (PID=2769) to work on /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:02:49.235+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aula_1_atividade_aula_4.py for tasks to queue
+[2024-10-20T20:02:49.239+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:02:49.237+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:02:49.281+0000] {processor.py:840} INFO - DAG(s) 'aula_1_atividade_4' retrieved from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:02:49.365+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:02:49.364+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-20T20:02:49.511+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:02:49.509+0000] {dag.py:3947} INFO - Setting next_dagrun for aula_1_atividade_4 to 2024-10-19 00:00:00+00:00, run_after=2024-10-20 00:00:00+00:00
+[2024-10-20T20:02:49.604+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aula_1_atividade_aula_4.py took 0.403 seconds
+[2024-10-20T20:03:20.351+0000] {processor.py:161} INFO - Started process (PID=2831) to work on /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:03:20.353+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aula_1_atividade_aula_4.py for tasks to queue
+[2024-10-20T20:03:20.356+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:03:20.355+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:03:20.388+0000] {processor.py:840} INFO - DAG(s) 'aula_1_atividade_4' retrieved from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:03:20.457+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:03:20.456+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-20T20:03:20.547+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:03:20.546+0000] {dag.py:3947} INFO - Setting next_dagrun for aula_1_atividade_4 to 2024-10-19 00:00:00+00:00, run_after=2024-10-20 00:00:00+00:00
+[2024-10-20T20:03:20.606+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aula_1_atividade_aula_4.py took 0.278 seconds
+[2024-10-20T20:03:50.884+0000] {processor.py:161} INFO - Started process (PID=2893) to work on /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:03:50.885+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aula_1_atividade_aula_4.py for tasks to queue
+[2024-10-20T20:03:50.886+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:03:50.885+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:03:50.896+0000] {processor.py:840} INFO - DAG(s) 'aula_1_atividade_4' retrieved from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:03:50.921+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:03:50.920+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-20T20:03:50.957+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:03:50.956+0000] {dag.py:3947} INFO - Setting next_dagrun for aula_1_atividade_4 to 2024-10-19 00:00:00+00:00, run_after=2024-10-20 00:00:00+00:00
+[2024-10-20T20:03:50.981+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aula_1_atividade_aula_4.py took 0.105 seconds
+[2024-10-20T20:04:21.647+0000] {processor.py:161} INFO - Started process (PID=2955) to work on /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:04:21.650+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aula_1_atividade_aula_4.py for tasks to queue
+[2024-10-20T20:04:21.652+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:04:21.651+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:04:21.680+0000] {processor.py:840} INFO - DAG(s) 'aula_1_atividade_4' retrieved from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:04:21.738+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:04:21.737+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-20T20:04:21.817+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:04:21.817+0000] {dag.py:3947} INFO - Setting next_dagrun for aula_1_atividade_4 to 2024-10-19 00:00:00+00:00, run_after=2024-10-20 00:00:00+00:00
+[2024-10-20T20:04:21.871+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aula_1_atividade_aula_4.py took 0.244 seconds
+[2024-10-20T20:04:52.565+0000] {processor.py:161} INFO - Started process (PID=3017) to work on /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:04:52.566+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aula_1_atividade_aula_4.py for tasks to queue
+[2024-10-20T20:04:52.566+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:04:52.566+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:04:52.576+0000] {processor.py:840} INFO - DAG(s) 'aula_1_atividade_4' retrieved from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:04:52.601+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:04:52.601+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-20T20:04:52.639+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:04:52.638+0000] {dag.py:3947} INFO - Setting next_dagrun for aula_1_atividade_4 to 2024-10-19 00:00:00+00:00, run_after=2024-10-20 00:00:00+00:00
+[2024-10-20T20:04:52.663+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aula_1_atividade_aula_4.py took 0.103 seconds
+[2024-10-20T20:05:23.158+0000] {processor.py:161} INFO - Started process (PID=3079) to work on /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:05:23.161+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aula_1_atividade_aula_4.py for tasks to queue
+[2024-10-20T20:05:23.164+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:05:23.163+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:05:23.197+0000] {processor.py:840} INFO - DAG(s) 'aula_1_atividade_4' retrieved from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:05:23.266+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:05:23.266+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-20T20:05:23.360+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:05:23.359+0000] {dag.py:3947} INFO - Setting next_dagrun for aula_1_atividade_4 to 2024-10-19 00:00:00+00:00, run_after=2024-10-20 00:00:00+00:00
+[2024-10-20T20:05:23.423+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aula_1_atividade_aula_4.py took 0.284 seconds
+[2024-10-20T20:05:53.552+0000] {processor.py:161} INFO - Started process (PID=3141) to work on /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:05:53.554+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aula_1_atividade_aula_4.py for tasks to queue
+[2024-10-20T20:05:53.557+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:05:53.556+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:05:53.587+0000] {processor.py:840} INFO - DAG(s) 'aula_1_atividade_4' retrieved from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:05:53.656+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:05:53.655+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-20T20:05:53.743+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:05:53.742+0000] {dag.py:3947} INFO - Setting next_dagrun for aula_1_atividade_4 to 2024-10-19 00:00:00+00:00, run_after=2024-10-20 00:00:00+00:00
+[2024-10-20T20:05:53.805+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aula_1_atividade_aula_4.py took 0.273 seconds
+[2024-10-20T20:06:24.237+0000] {processor.py:161} INFO - Started process (PID=3204) to work on /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:06:24.240+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aula_1_atividade_aula_4.py for tasks to queue
+[2024-10-20T20:06:24.243+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:06:24.242+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:06:24.276+0000] {processor.py:840} INFO - DAG(s) 'aula_1_atividade_4' retrieved from /opt/airflow/dags/aula_1_atividade_aula_4.py
+[2024-10-20T20:06:24.343+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:06:24.343+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2024-10-20T20:06:24.429+0000] {logging_mixin.py:188} INFO - [2024-10-20T20:06:24.428+0000] {dag.py:3947} INFO - Setting next_dagrun for aula_1_atividade_4 to 2024-10-19 00:00:00+00:00, run_after=2024-10-20 00:00:00+00:00
+[2024-10-20T20:06:24.492+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aula_1_atividade_aula_4.py took 0.281 seconds

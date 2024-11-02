@@ -1,0 +1,11 @@
+#token fictícia
+export BEARER_TOKEN=s8nfF7eiaj
+
+para listar as variáveis de ambiente use o comando: env
+
+para apagar uma variável de ambiente use o comando: env --unset=BEARER_TOKEN
+
+no código python importar a lib os para interações com o sistema operacional
+em seguida use o comando para recuperar:
+
+bearer_token = os.environ.get("BEARER_TOKEN")

@@ -1,0 +1,23 @@
+[2024-10-23T00:33:32.981+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-23T00:33:33.011+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: aula_4_1_get_stocks_dag.TSLA scheduled__2022-02-08T00:00:00+00:00 [queued]>
+[2024-10-23T00:33:33.030+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: aula_4_1_get_stocks_dag.TSLA scheduled__2022-02-08T00:00:00+00:00 [queued]>
+[2024-10-23T00:33:33.030+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-10-23T00:33:33.055+0000] {taskinstance.py:2888} INFO - Executing <Task(_PythonDecoratedOperator): TSLA> on 2022-02-08 00:00:00+00:00
+[2024-10-23T00:33:33.068+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=447) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-10-23T00:33:33.070+0000] {standard_task_runner.py:72} INFO - Started process 496 to run task
+[2024-10-23T00:33:33.071+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'aula_4_1_get_stocks_dag', 'TSLA', 'scheduled__2022-02-08T00:00:00+00:00', '--job-id', '366', '--raw', '--subdir', 'DAGS_FOLDER/aula_4_1_get_stocks.py', '--cfg-path', '/tmp/tmpzkiz57pr']
+[2024-10-23T00:33:33.076+0000] {standard_task_runner.py:105} INFO - Job 366: Subtask TSLA
+[2024-10-23T00:33:33.160+0000] {task_command.py:467} INFO - Running <TaskInstance: aula_4_1_get_stocks_dag.TSLA scheduled__2022-02-08T00:00:00+00:00 [running]> on host 375c06cd6615
+[2024-10-23T00:33:33.330+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='aula_4_1_get_stocks_dag' AIRFLOW_CTX_TASK_ID='TSLA' AIRFLOW_CTX_EXECUTION_DATE='2022-02-08T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2022-02-08T00:00:00+00:00'
+[2024-10-23T00:33:33.332+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-23T00:33:33.341+0000] {cache.py:130} INFO - Failed to create TzCache, reason: Error creating TzCache folder: '/home/***/.cache/py-yfinance' reason: [Errno 13] Permission denied: '/home/***/.cache/py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+[2024-10-23T00:33:33.342+0000] {cache.py:336} INFO - Failed to create CookieCache, reason: Error creating CookieCache folder: '/home/***/.cache/py-yfinance' reason: [Errno 13] Permission denied: '/home/***/.cache/py-yfinance'. CookieCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+[2024-10-23T00:33:36.612+0000] {history.py:245} ERROR - $TSLA: possibly delisted; no price data found  (1h 2022-02-07 -> 2022-02-08) (Yahoo error = "1h data not available for startTime=1644210000 and endTime=1644296400. The requested range must be within the last 730 days.")
+[2024-10-23T00:33:36.622+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-10-23T00:33:36.650+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-23T00:33:36.651+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=aula_4_1_get_stocks_dag, task_id=TSLA, run_id=scheduled__2022-02-08T00:00:00+00:00, execution_date=20220208T000000, start_date=20241023T003333, end_date=20241023T003336
+[2024-10-23T00:33:36.704+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-23T00:33:36.732+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-23T00:33:36.734+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

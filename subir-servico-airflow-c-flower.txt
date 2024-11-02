@@ -1,0 +1,2 @@
+AIRFLOW_UID=$(id -u) docker-compose --profile flower up -d --build
+
